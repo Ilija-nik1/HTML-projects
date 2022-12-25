@@ -1,0 +1,34 @@
+<html>
+ <head> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ </head> 
+ <body> 
+ <link  rel="stylesheet" type="text/css" href="JARVIS.css">
+  <div style="max-width: 250px;text-align:center;margin: 0px auto;padding: 14%;"> 
+   <h2>J.A.R.V.I.S</h2> 
+   <svg width="210" height="210" id="jarvis-like"> 
+    <defs> 
+     <filter id="light-circle"> 
+      <fegaussianblur result="blurred" in="SourceGraphic" stdDeviation="1" /> 
+     </filter> 
+    </defs> 
+    <circle cx="105" cy="105" r="100" style="fill: transparent;stroke: #B4F6FB;stroke-width: 2; stroke-dasharray: 50, 5"></circle> 
+    <circle cx="105" cy="105" r="95" style="fill: transparent;stroke: #64E6EF;stroke-width: 1.5;"> 
+    </circle> 
+    <circle cx="105" cy="105" r="80" style="fill: transparent; stroke: #B4F6FB; stroke-width: 10; stroke-dasharray: 2,2.29"> 
+     <animatetransform attributename="transform" attributtype="XML" type="rotate" from="0 105 105" to="360 105 105" dur="10s" repeatcount="indefinite"> 
+     </animatetransform> 
+    </circle> 
+    <circle cx="105" cy="105" r="61" transform="rotate(0 105 105)" style="fill: transparent; stroke: #B4F6FB; stroke-width: 2; stroke-dasharray: 50, 25"> 
+     <animatetransform attributeName="transform" attributType="XML" type="rotate" from="0 105 105" to="-360 105 105" dur="10s" repeatCount="indefinite" /> 
+    </circle> 
+    <circle cx="105" cy="105" r="50" style="fill: transparent; stroke: #64E6EF; stroke-width: 15;filter: url(#light-circle);"></circle> 
+    <circle cx="105" cy="105" r="40" style="fill: transparent; stroke: #64E6EF; stroke-width: 2"> 
+    </circle> 
+    <path d="M 105 120 L 130 95 L 80 95 z" style="fill: #D1FBFC; stroke: #B4F6FB; stroke-width:5"> 
+    </path> 
+   </svg> 
+  </div> 
+ </body>
+</html>

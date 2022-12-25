@@ -1,0 +1,120 @@
+body{
+    background-color:black;
+}
+#w1 {
+    perspective: 800px;
+    width:200px;
+    height:200px;
+}
+#w2 {
+    position: absolute ;
+    width: 200px;
+    transform-origin: 100px 100px 0;
+    height:200px;
+    transform-style: preserve-3d;
+    margin-top:calc(40vh - 100px);
+    margin-left:calc(50vw - 100px);
+    animation: spin 24s ease-in-out infinite ;
+}
+#w2 > div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform-origin: 100px 100px 0;
+    opacity:0.7;
+    transition-duration:2s;
+    
+}
+#w2:hover > div {
+    background-color:red;
+    box-sizing:border-box;
+    border-style:solid;
+    background-color:red;
+    animation:glow 70s infinite alternate;
+}
+@keyframes glow{
+    10%{
+        background-color:skyblue;
+        box-shadow: 0 0 100px skyblue, 0 0 50px skyblue;
+    }
+    20%{
+        background-color:lime;
+        box-shadow: 0 0 100px lime, 0 0 50px lime;
+    }
+    30%{
+        background-color:orange;
+        box-shadow: 0 0 100px orange, 0 0 50px orange;
+    }
+    40%{
+        background-color:pink;
+        box-shadow: 0 0 100px pink, 0 0 50px pink;
+    }
+    50%{
+        background-color:lightgray;
+        box-shadow: 0 0 100px lightgray, 0 0 50px lightgray;
+    }
+    60%{
+        background-color:lightpurple;
+        box-shadow: 0 0 100px lightpurple, 0 0 50px lightpurple;
+    }
+    70%{
+        background-color:chocolate;
+        box-shadow: 0 0 100px chocolate, 0 0 50px chocolate;
+    }
+    80%{
+        background-color:violet;
+        box-shadow: 0 0 100px violet, 0 0 50px violet;
+    }
+    90%{
+        background-color:yellow;
+        box-shadow: 0 0 100px yellow, 0 0 50px yellow;
+    }
+}
+#f1 {
+    transform: translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-color:red;
+}
+#f2 {
+    transform: rotateY(180deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-color:chocolate;
+}
+
+#f3 {
+    transform: rotateY(-90deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+
+    background-color:orange;
+}
+
+#f4 {
+    transform: rotateY(90deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-color:violet;
+}
+#f5 {
+    transform: rotateX(90deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-color:green;
+}
+
+#f6 {
+    transform: rotateX(-90deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-color:blue;
+}
+@keyframes spin{    
+    20% { 
+        transform: rotateY(-450deg) rotateX(360deg); 
+    }
+    40% {
+        transform: rotateY(90deg) rotateX(-360deg); 
+    }
+    60% { 
+    transform: rotateY(-360deg) rotateX(450deg); 
+    }
+    80% { 
+    transform: rotateY(360deg) rotateX(-90deg);
+    }
+}

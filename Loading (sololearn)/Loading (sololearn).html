@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sololearn loading</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <style>
+            *{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-right:auto;
+    margin-left:auto;
+}
+body{
+    background-color:#eef;
+}
+div{
+    width: 180px;
+    height: 180px;
+    border-radius:50%;
+    border-top:50px;
+    border-top-style:solid;
+    
+}
+
+div:nth-child(1){
+    border-top-color:#f07848;
+    transform:rotate(-30deg) translate(50%,0%);
+    top:30px;
+    left:-90px;
+}
+div:nth-child(2){
+    border-top-color:#60c048;
+    transform:rotate(-90deg) translate(50%,0%);
+    top:80px;
+    left:-20px;
+}
+div:nth-child(3){
+    border-top-color:#009090;
+    transform:rotate(-150deg) translate(50%,0%);
+    top:45px;
+    left:60px;
+}
+div:nth-child(4){
+    border-top-color:#30c0f0;
+    transform:rotate(-210deg) translate(50%,0%);
+    top:-42px;
+    left:72px;
+}
+div:nth-child(5){
+    border-top-color:#f060a8;
+    transform:rotate(-270deg) translate(50%,0%);
+    top:-85px;
+    left:5px;
+}
+div:nth-child(6){
+    border-top-color:#f06060;
+    transform:rotate(-330deg) translate(50%,0%);    
+    top:-55px;
+    left:-75px;
+}
+@keyframes loading{
+    0%{transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+        </style>
+    </head>
+    <body onload="loader()">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    <script>
+    function loader() {
+    var d = document.getElementsByTagName("div");
+    for (var i = 0; i < d.length; i++)
+        d[i].style.animation = "loading 5.2s linear infinite " + (0.9 * i) + "s";
+}
+    </script>
+    </body>
+</html>
+<script>

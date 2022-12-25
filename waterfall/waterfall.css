@@ -1,0 +1,97 @@
+
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(245, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap {
+    position: relative;
+    margin: .5vh 2vw;
+    overflow: hidden;
+    width: 96vw;
+    height: 99vh;
+}
+
+pre {
+    white-space: pre-wrap;
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+     /* Non standard for WebKit */
+    word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        -ms-hyphens: auto;
+    hyphens: auto;
+       
+       max-width: 1em;
+       
+       position: absolute;       
+       -webkit-transform: translateY(-500vh);       
+          -moz-transform: translateY(-500vh);       
+           -ms-transform: translateY(-500vh);       
+            -o-transform: translateY(-500vh);       
+               transform: translateY(-500vh); 
+       
+       -webkit-animation: down 20s linear infinite; 
+       
+          -moz-animation: down 20s linear infinite; 
+       
+            -o-animation: down 20s linear infinite; 
+       
+               animation: down 20s linear infinite;      
+}
+
+@-webkit-keyframes down {
+    from {
+        -webkit-transform: translateY(-400vh);
+                transform: translateY(-400vh);     
+    }
+    to {
+        -webkit-transform: translateY(400vh);
+                transform: translateY(400vh);     
+    }
+}
+
+@-moz-keyframes down {
+    from {
+        -moz-transform: translateY(-400vh);
+             transform: translateY(-400vh);     
+    }
+    to {
+        -moz-transform: translateY(400vh);
+             transform: translateY(400vh);     
+    }
+}
+
+@-o-keyframes down {
+    from {
+        -o-transform: translateY(-400vh);
+           transform: translateY(-400vh);     
+    }
+    to {
+        -o-transform: translateY(400vh);
+           transform: translateY(400vh);     
+    }
+}
+
+@keyframes down {
+    from {
+        -webkit-transform: translateY(-400vh);
+           -moz-transform: translateY(-400vh);
+             -o-transform: translateY(-400vh);
+                transform: translateY(-400vh);     
+    }
+    to {
+        -webkit-transform: translateY(400vh);
+           -moz-transform: translateY(400vh);
+             -o-transform: translateY(400vh);
+                transform: translateY(400vh);     
+    }
+}
+
